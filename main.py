@@ -29,7 +29,7 @@ def is_injective(mapping: dict) -> bool:
     """Return True if f is one-to-one (no two inputs map to same output)."""
     # === TODO ===
     # Your code here
-    return True if len(mapping.values()) > 1 else False
+    return len(set(mapping.values())) == len(mapping.values())
     # === END TODO ===
 
 
