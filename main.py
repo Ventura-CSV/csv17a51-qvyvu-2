@@ -21,8 +21,14 @@ def is_well_defined(mapping: dict, target: set) -> bool:
     """Return True if every output value is in the target set."""
     # === TODO ===
     # Your code here
+    if len(mapping.values()) == 0:
+        return True
     
-    return True if mapping.values() in target else False
+    for v in mapping.values():
+        if v not in target:
+            return False
+        
+    return True
     # === END TODO ===
 
 
