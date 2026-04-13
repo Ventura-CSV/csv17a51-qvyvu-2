@@ -26,7 +26,7 @@ def is_well_defined(mapping: dict, target: set) -> bool:
     
     for v in mapping.values():
         if v not in target:
-            return False
+            return False 
         
     return True
     # === END TODO ===
