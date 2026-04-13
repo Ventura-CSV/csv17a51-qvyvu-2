@@ -12,9 +12,8 @@ def get_domain(mapping: dict) -> set:
 def get_range(mapping: dict) -> set:
     """Return the range — the set of outputs actually mapped to."""
     # === TODO ===
-    pass
     # Your code
-    pass
+    return set(mapping.values())
     # === END TODO ===
 
 
@@ -22,7 +21,7 @@ def is_well_defined(mapping: dict, target: set) -> bool:
     """Return True if every output value is in the target set."""
     # === TODO ===
     # Your code here
-    pass
+    return True if mapping.values() in target else False
     # === END TODO ===
 
 
@@ -30,7 +29,7 @@ def is_injective(mapping: dict) -> bool:
     """Return True if f is one-to-one (no two inputs map to same output)."""
     # === TODO ===
     # Your code here
-    pass
+    return True if len(mapping.values()) > 1 else False
     # === END TODO ===
 
 
